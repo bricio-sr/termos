@@ -182,6 +182,7 @@
             margin: 0 auto;
             padding: 0 20px;
             display: flex;
+            justify-content: center; /* Centraliza o menu no Desktop */
             gap: 2px;
             overflow-x: auto;
             scrollbar-width: none;
@@ -673,6 +674,12 @@
 
             .container {
                 padding: 40px 16px;
+            }
+
+            /* Adaptação do menu para mobile */
+            .nav {
+                justify-content: flex-start; /* Alinha à esquerda para permitir scroll */
+                padding: 0 10px; /* Ajuste leve no padding */
             }
 
             .content-block {
